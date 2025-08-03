@@ -3,7 +3,7 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
 # 准备的测试数据集
-test_data = torchvision.datasets.CIFAR10('../P15-20/dataset', train=False, transform=torchvision.transforms.ToTensor(),
+test_data = torchvision.datasets.CIFAR10('dataset', train=False, transform=torchvision.transforms.ToTensor(),
                                          download=True)
 test_loader = DataLoader(dataset=test_data, batch_size=64, shuffle=True, num_workers=0, drop_last=False)
 

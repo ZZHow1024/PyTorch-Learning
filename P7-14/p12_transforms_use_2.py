@@ -3,7 +3,7 @@ from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 
 writer = SummaryWriter('logs')
-image = Image.open('../P15-20/dataset/train/ants/0013035.jpg')
+image = Image.open('dataset/train/ants/0013035.jpg')
 transforms_tensor = transforms.ToTensor()
 
 # Resize 的使用
